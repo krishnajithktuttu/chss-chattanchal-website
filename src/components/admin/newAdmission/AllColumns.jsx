@@ -145,10 +145,11 @@ function AllColumns() {
           const formData = new FormData();
           if (global == true){
             formData.append("file", filePhoto);
-          }else{
+          }
+          else{
             formData.append("file", webCamPhoto);
           }
-          
+          console.log(response.data)
 
           Axios.post(
             `admin/upload-student-photo?studentId=${response.data}`,
