@@ -3,7 +3,7 @@ import styles from "../../../styles/admin/admission/newAdmission/AllColumns.modu
 
 export default function Field(props) {
   return (
-    <div className={props.containerClass}>
+    <div className={props.containerClass} style={props.styling}>
       <label className={`${styles.label}`}>
         {props.text} <span className={`${styles.aster}`}> * </span>
       </label>

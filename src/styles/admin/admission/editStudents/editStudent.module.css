@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&family=Roboto:wght@300&display=swap");
+
+/* ------------------ global ------------------ */
+
+* {
+  font-family: inria sans;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.containerNew {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.subContainer {
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5vw;
+}
+
+.subContainerNew {
+  height: 15vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  margin-right: 58vw;
+}
+
+.aster {
+  color: #ff0000;
+}
+
+.inputField {
+  height: 1.5vw;
+  width: 20vw;
+  background: #ffffff;
+  border: 1px solid #a0a0a0;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-left: 10vw;
+  font-size: 1vw;
+}
+
+.inputFieldNew {
+  height: 1.5vw;
+  width: 20vw;
+  background: #ffffff;
+  border: 1px solid #a0a0a0;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-left: 10vw;
+  font-size: 1vw;
+}
+
+.label {
+  width: 20vw;
+  font-size: 1.25vw;
+}
+
+.subHeadingLabel {
+  width: 25vw;
+  margin: 5vw 44vw 5vw 0;
+  font-size: 1.75vw;
+}
+
+.submitButton {
+  margin: 8vh 0 5vh 0;
+  width: 9vw;
+  height: 6vh;
+  background: #28b4ab;
+  border-radius: 8px;
+  border: none;
+  color: #ffffff;
+  font-size: 1vw;
+}
+
+.submitButton:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.selectElement {
+  height: 4vh;
+  font-size: 15px;
+}
+
+.photoContainer {
+  height: 20vw;
+  width: calc((4 * 20vw) / 3);
+  border: 2px dotted #6A2C70;
+  margin: 10vh 16vw 0;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ------------------ title ------------------ */
+
+.mandatoryLabel {
+  display: flex;
+  padding: 8vh 0 0 16vw;
+  font-size: 2vw;
+}
+
+.img2 {
+  width: 5vw;
+  height: auto;
+  padding-left: 16vw;
+}
+
+.titleLabel {
+  font-size: 2vw;
+  padding-left: 2vw;
+}
+
+.stopLine {
+  width: 5vh;
+  transform: rotate(90deg);
+  margin-right: 55vw;
+  z-index: -1;
+}
+
+.separationLine {
+  width: 68vw;
+}
+
+.separationLineNormal {
+  margin-top: 10vh;
+}
+
+.pathBox {
+  height: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-right: 45vw;
+}
+
+.pathLabel {
+  font-size: 1.25vw;
+  padding: 0 0.5vw 0 0.5vw;
+}
+
+/* ------------------ application form ------------------ */
+
+.applicationNo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: end;
+  height: 10vh;
+  margin-top: 10vh;
+  margin-right: 11vw;
+}
+
+/* ------------------ QR button ------------------ */
+
+.qrButton {
+  margin-right: 58vw;
+  margin-top: 5vh;
+  height: 2vw;
+  width: 20vw;
+  background: #ffffff;
+  border: 1px solid #a0a0a0;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-left: 10vw;
+  font-size: 1vw;
+}
+
+.qrButton:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+/* ------------------ mobile phone design ------------------ */
+
+.uploadPhoto{
+  border-radius: 0;
+  
+}
+
+.uploadPhoto:hover{
+  cursor: pointer;
+}
+
+/* ------------------ mobile phone design ------------------ */
+
+@media (orientation: portrait) {
+  .titleLabel {
+    font-size: 5vw;
+    width: 38vw;
+  }
+
+  .container {
+    width: 74%;
+    flex-direction: column;
+  }
+
+  .subContainerTitle {
+    margin-right: 1vw;
+  }
+
+  .containerNew {
+    padding-top: 2vh;
+    width: 75%;
+  }
+
+  .separationLine {
+    margin-right: 52vw;
+  }
+
+  .pathBox {
+    padding-right: 69vw;
+  }
+
+  .label {
+    width: 50vw;
+    font-size: 3.5vw;
+  }
+
+  .pathLabel {
+    font-size: 2.5vw;
+  }
+
+  .img2 {
+    width: 8vw;
+  }
+
+  .subContainer {
+    height: 15vh;
+  }
+
+  .subHeadingLabel {
+    width: 60vw;
+    font-size: 5vw;
+    margin-left: 27vw;
+  }
+
+  .mandatoryLabel {
+    padding-top: 1vh;
+    font-size: 5vw;
+    padding-left: 10vw;
+  }
+
+  .subContainerNew {
+    height: 15 vh;
+    margin-right: 36vw;
+  }
+
+  .submitButton {
+    width: 12vh;
+    height: 4vh;
+  }
+
+  .selectElement {
+    font-size: 13px;
+    height: 2vh;
+    width: 20vw;
+  }
+
+  .inputField {
+    font-size: 13px;
+    width: 50vw;
+    height: 2.5vh;
+  }
+
+  .inputFieldNew {
+    font-size: 13px;
+    width: 50vw;
+    height: 2.5vh;
+  }
+
+  .qrButton{
+    display: none;
+  }
+
+  .submitButton {
+    font-size: 15px;
+  }
+
+  .stopLine {
+    margin-left: -3vw;
+  }
+
+  .applicationNo {
+    margin-right: 36vw;
+  }
+}

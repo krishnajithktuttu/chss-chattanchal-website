@@ -11,6 +11,8 @@ import Admission from "./pages/admin/Admission";
 import NewAdmission from "./pages/admin/admission/NewAdmission";
 import StudentDetails from "./pages/admin/admission/StudentDetails";
 
+import EditStudents from "./pages/admin/admission/EditStudents"
+
 export default function App() {
   return (
     <>
@@ -32,6 +34,10 @@ export default function App() {
             <Route
               path="/admin/admission/student-details"
               element={<StudentDetails />}
+            ></Route>
+            <Route
+              path="/admin/admission/edit-students"
+              element={<EditStudents />}
             ></Route>
           </Route>
         </Route>
