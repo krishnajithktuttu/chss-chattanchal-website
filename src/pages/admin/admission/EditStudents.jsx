@@ -1,4 +1,4 @@
-import styles from "../../../styles/admin/admission/editStudents/editStudent.module.css"
+import style from "../../../styles/admin/admission/editStudents/editStudent.module.css"
 import React, { Fragment, useRef, useState } from "react";
 import img2 from "/imgs/image_2.svg";
 import Axios from "../../../../stores/Axios";
@@ -177,47 +177,47 @@ function editStudents() {
     }
 
     return (
-        <div className={`${styles.globalParent}`}>
+        <div className={`${style.globalParent}`}>
             <NavBar />
 
             {/* ---------------- top infos ----------------   */}
 
-            <div className={`${styles.subContainer}`}>
-                <img className={`${styles.img2}`} src={img2} />
-                <label className={`${styles.titleLabel}`}>Edit student</label>
-                <hr className={`${styles.stopLine}`} />
+            <div className={`${style.subContainer}`}>
+                <img className={`${style.img2}`} src={img2} />
+                <label className={`${style.titleLabel}`}>Edit student</label>
+                <hr className={`${style.stopLine}`} />
             </div>
-            <hr className={`${styles.separationLine}`} />
-            <div className={`${styles.pathBox}`}>
-                <label className={`${styles.pathLabel}`}>Home</label>
-                <label className={`${styles.pathLabel}`}>-</label>
-                <label className={`${styles.pathLabel}`}>Admissions</label>
-                <label className={`${styles.pathLabel}`}>-</label>
-                <label className={`${styles.pathLabel}`}>Edit students</label>
+            <hr className={`${style.separationLine}`} />
+            <div className={`${style.pathBox}`}>
+                <label className={`${style.pathLabel}`}>Home</label>
+                <label className={`${style.pathLabel}`}>-</label>
+                <label className={`${style.pathLabel}`}>Admissions</label>
+                <label className={`${style.pathLabel}`}>-</label>
+                <label className={`${style.pathLabel}`}>Edit students</label>
             </div>
 
-            <img className={styles.photoContainer} src={filePhoto} ></img>
+            <img className={style.photoContainer} src={filePhoto} ></img>
 
             <Field
                 text="Upload photo"
                 type="file"
                 change={onChangePhoto}
                 extention="image/*"
-                inputStyle={styles.uploadPhoto}
-                containerClass={styles.subContainerNew}
+                inputStyle={style.uploadPhoto}
+                containerClass={style.subContainerNew}
                 styling={{ marginRight: "64vw" }}
             />
 
             {/* ---------------- Container 1 ----------------  */}
 
-            <div className={`${styles.container}`}>
+            <div className={`${style.container}`}>
                 <Field
                     text="Application number"
                     type="number"
                     change={handleChange}
                     value={data.applicationNo}
                     name="applicationNo"
-                    containerClass={`${styles.subContainer} ${styles.applicationNo}`}
+                    containerClass={`${style.subContainer} ${style.applicationNo}`}
                 />
                 <Field
                     text="Application Date"
@@ -225,20 +225,20 @@ function editStudents() {
                     change={handleChange}
                     value={data.admissionDate}
                     name="admissionDate"
-                    containerClass={`${styles.subContainer} ${styles.applicationNo}`}
+                    containerClass={`${style.subContainer} ${style.applicationNo}`}
                 />
             </div>
-            <hr className={`${styles.separationLine}`} />
+            <hr className={`${style.separationLine}`} />
 
             {/* ---------------- Container 2 ----------------  */}
 
-            <div className={`${styles.containerNew} `}>
+            <div className={`${style.containerNew} `}>
                 <Field
                     text="Name of the student"
                     change={handleChange}
                     value={data.name}
                     name="name"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <Field
                     text="Aadhaar no."
@@ -246,7 +246,7 @@ function editStudents() {
                     change={handleChange}
                     value={data.aadhaarNo}
                     name="aadhaarNo"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <Field
                     text="Phone no."
@@ -254,7 +254,7 @@ function editStudents() {
                     change={handleChange}
                     value={data.phone}
                     name="phone"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <SelectField
                     text="Gender"
@@ -266,55 +266,55 @@ function editStudents() {
                         ["Female", "female"],
                         ["Others", "others"],
                     ]}
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
             </div>
-            <hr className={`${styles.separationLine}`} />
+            <hr className={`${style.separationLine}`} />
 
             {/* ---------------- Container 3 ----------------  */}
 
-            <div className={`${styles.containerNew} `}>
+            <div className={`${style.containerNew} `}>
                 <Field
                     text="Name of the parent / guardian"
                     change={handleChange}
                     value={data.nameOfParent}
                     name="nameOfParent"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <Field
                     text="Occupation of the parent / guardian"
                     change={handleChange}
                     value={data.occupationOfParent}
                     name="occupationOfParent"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <Field
                     text="Relationship of the student to guardian"
                     change={handleChange}
                     value={data.relationshipWithGuardian}
                     name="relationshipWithGuardian"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <Field
                     text="Address of guardian"
                     change={handleChange}
                     value={data.addressOfGuardian}
                     name="addressOfGuardian"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <Field
                     text="Religion"
                     change={handleChange}
                     value={data.religion}
                     name="religion"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <Field
                     text="Caste"
                     change={handleChange}
                     value={data.caste}
                     name="caste"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <SelectField
                     text=" Does the student belong to OBC"
@@ -325,21 +325,21 @@ function editStudents() {
                         ["yes", true],
                         ["no", false],
                     ]}
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <Field
                     text="Category"
                     change={handleChange}
                     value={data.category}
                     name="category"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <Field
                     text="If the student belong to linguistic minority specify the language"
                     change={handleChange}
                     value={data.linguisticMinority}
                     name="linguisticMinority"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <Field
                     text="DOB"
@@ -347,14 +347,14 @@ function editStudents() {
                     change={handleChange}
                     value={data.dob}
                     name="dob"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
             </div>
 
             {/* ---------------- Container 4 ----------------  */}
 
-            <hr className={`${styles.separationLine}`} />
-            <div className={`${styles.containerNew}`}>
+            <hr className={`${style.separationLine}`} />
+            <div className={`${style.containerNew}`}>
                 <Field
                     text="Class in which admitted"
                     type="number"
@@ -363,7 +363,7 @@ function editStudents() {
                     change={handleChange}
                     value={data.class}
                     name="class"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <SelectField
                     text="Course in which admitted"
@@ -379,7 +379,7 @@ function editStudents() {
                             "COMMERCE",
                         ],
                     ]}
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <SelectField
                     text="Second Language"
@@ -391,7 +391,7 @@ function editStudents() {
                         ["Arabic", "Arabic"],
                         ["Hindi", "Hindi"]
                     ]}
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <SelectField
                     text="Status"
@@ -402,15 +402,15 @@ function editStudents() {
                         ["permanent", "permanent"],
                         ["temporary", "temporary"],
                     ]}
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
             </div>
 
             {/* ---------------- Container 5 ----------------  */}
 
-            <hr className={`${styles.separationLine}`} />
-            <div className={`${styles.containerNew}`}>
-                <label className={`${styles.subHeadingLabel}`}>
+            <hr className={`${style.separationLine}`} />
+            <div className={`${style.containerNew}`}>
+                <label className={`${style.subHeadingLabel}`}>
                     Details of qualifying examination
                 </label>
                 <Field
@@ -418,7 +418,7 @@ function editStudents() {
                     change={handleChange}
                     value={data.qualifyingExamDetails.nameOfBoard}
                     name="nameOfBoard"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <Field
                     text="Register No."
@@ -426,20 +426,20 @@ function editStudents() {
                     change={handleChange}
                     value={data.qualifyingExamDetails.registerNo}
                     name="registerNo"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <Field
                     text="Month and year of passing"
                     change={handleChange}
                     value={data.qualifyingExamDetails.passingTime}
                     name="passingTime"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
             </div>
             {/* ---------------- Container 6 ----------------  */}
-            <hr className={`${styles.separationLine}`} />
-            <div className={`${styles.containerNew}`}>
-                <label className={`${styles.subHeadingLabel}`}>
+            <hr className={`${style.separationLine}`} />
+            <div className={`${style.containerNew}`}>
+                <label className={`${style.subHeadingLabel}`}>
                     Details of Transfer certificate produced on admission
                 </label>
                 <Field
@@ -448,7 +448,7 @@ function editStudents() {
                     change={handleChange}
                     value={data.tcDetailsOnAdmission.number}
                     name="number"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <Field
                     text="Date"
@@ -456,19 +456,19 @@ function editStudents() {
                     change={handleChange}
                     value={data.tcDetailsOnAdmission.date}
                     name="date"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
                 <Field
                     text="Issued school / institution"
                     change={handleChange}
                     value={data.tcDetailsOnAdmission.school}
                     name="school"
-                    containerClass={styles.subContainerNew}
+                    containerClass={style.subContainerNew}
                 />
 
 
 
-                <button onClick={handleSubmit} className={`${styles.submitButton}`}>
+                <button onClick={handleSubmit} className={`${style.submitButton}`}>
                     Submit
                 </button>
             </div>
